@@ -21,15 +21,15 @@ import Logo from '../../public/assets/Logo'
 
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col">
-      <div className="flex flex-1">
-        <aside className="flex flex-col bg-black w-72 resize">
-          <div className="flex-1 flex flex-col p-6">
+    <div className="flex flex-col relative">
+      <div className="flex h-screen pb-20">
+        <aside className="flex flex-col bg-black w-72">
+          <div className="flex-1 flex flex-col p-6 overflow-y-scroll scrollbar-thin scrollbar-thumb-zinc-400 scrollbar-thumb-rounded-full">
             <div className="w-1/2">
               <Logo />
             </div>
 
-            <nav className="space-y-4 my-7 text-sm font-semibold text-zinc-400">
+            <nav className="space-y-4 py-7 text-sm font-semibold text-zinc-400">
               <a href="#" className="flex items-center gap-2 text-zinc-200">
                 <HomeIcon />
                 Home
@@ -81,7 +81,7 @@ export default function Home() {
           </div>
         </aside>
 
-        <main className="flex flex-col flex-1 pt-6 pb-6 pl-6 bg-gradient-to-b from-green-700/20 via-green-900/5">
+        <main className="flex flex-col w-full pt-6 pb-6 pl-6 bg-gradient-to-b from-green-700/20 via-green-900/5">
           <div className="flex items-center justify-between pr-6">
             <div className="flex space-x-4">
               <button className="p-2 rounded-full bg-black/80 hover:bg-black/50">
@@ -494,7 +494,7 @@ export default function Home() {
         </main>
       </div>
 
-      <footer className="flex items-center justify-between h-24 border-t border-zinc-800 p-6">
+      <footer className="absolute bottom-0 left-0 right-0 h-20 bg-zinc-900 flex items-center justify-between border-t border-zinc-800 px-6 py-3">
         <div id="music" className="flex-1 flex gap-4 items-center">
           <div className="flex flex-col">
             <strong>Charlie</strong>
