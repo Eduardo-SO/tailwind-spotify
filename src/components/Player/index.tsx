@@ -11,10 +11,10 @@ import {
   RepeatIcon,
 } from 'lucide-react'
 
-export function Footer() {
+export function Player() {
   return (
-    <footer className="absolute bottom-0 left-0 right-0 h-20 bg-zinc-900 flex items-center justify-between border-t border-zinc-800 px-6 py-3">
-      <div id="music" className="flex-1 flex gap-4 items-center">
+    <footer className="hidden lg:flex absolute bottom-0 left-0 right-0 h-20 bg-zinc-900  items-center justify-between border-t border-zinc-800 px-6 py-3">
+      <div className="flex-1 flex gap-4 items-center">
         <div className="flex flex-col">
           <strong>Charlie</strong>
           <span className="text-zinc-400 text-sm">Paul Sabin</span>
@@ -25,7 +25,7 @@ export function Footer() {
         </button>
       </div>
 
-      <div id="player" className="flex-grow flex flex-col items-center gap-2">
+      <div className="flex-grow flex flex-col items-center gap-2">
         <div className="flex gap-4">
           <button>
             <ShuffleIcon className="h-5" />
@@ -51,7 +51,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div id="controls" className="flex-1 flex justify-end gap-4">
+      <div className="flex-1 flex justify-end gap-4">
         <button>
           <ListMusicIcon className="h-5" />
         </button>

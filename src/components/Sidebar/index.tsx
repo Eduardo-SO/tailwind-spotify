@@ -5,7 +5,7 @@ import Logo from '../../../public/assets/Logo'
 export function Sidebar() {
   return (
     <aside className="hidden lg:flex flex-col bg-black w-72">
-      <div className="flex-1 flex flex-col p-6 overflow-y-scroll scrollbar-thin scrollbar-thumb-zinc-400 scrollbar-thumb-rounded-full">
+      <div className="flex-1 flex flex-col p-6 overflow-y-auto scrollbar-thin scrollbar-thumb-zinc-400 scrollbar-thumb-rounded-full">
         <div className="w-1/2">
           <Logo />
         </div>
